@@ -1,18 +1,18 @@
-# LubosD Fatrat
+# Homebrew tap for FatRat
 
-## How do I install these formulae?
+[FatRat](https://github.com/LubosD/fatrat) is a download manager with BitTorrent,
+HTTP(S) and FTP support, a web interface and Python extensions.
 
-`brew install lubosd/fatrat/<formula>`
+## Install
 
-Or `brew tap lubosd/fatrat` and then `brew install <formula>`.
+There is no macOS-compatible release yet, so install from the latest source:
 
-Or, in a `brew bundle` `Brewfile`:
-
-```ruby
-tap "lubosd/fatrat"
-brew "<formula>"
+```sh
+brew install --HEAD lubosd/fatrat/fatrat
 ```
 
-## Documentation
+Upgrade to the newest commit with `brew upgrade --fetch-HEAD fatrat`.
 
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+The formula builds the Qt desktop UI, BitTorrent (libtorrent-rasterbar),
+curl-based HTTP/FTP, the web interface and Python extensions (Python 3.15).
+D-Bus is disabled on macOS.
